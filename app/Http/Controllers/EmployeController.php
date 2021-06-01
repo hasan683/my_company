@@ -14,7 +14,12 @@ class EmployeController extends Controller
     
     public function index()
     {
-        $employes=employe::get('designation');
-        return view('employe', ['employe' => $employes]);
+       
+
+        $employes = employe::get();
+
+        return view('employe', compact('employes'));
     } 
+
 }
+

@@ -24,12 +24,10 @@
 <table>
   <tr>
     <th>id</th>
-    <th>name</th>
-    <th>phone</th>
-    <th>address</th>
-    <th>designation</th>
-    <th>salary</th>
-    <th>joining_date</th>
+    <th>in_time</th>
+    <th>out_time</th>
+    <th>date</th>
+    
   </tr>
 
   
@@ -42,17 +40,13 @@
   }
   </style>
 
-@foreach($employes as $employ)
+@foreach($employee_attendences as $employee_attenden)
 
 <tr>
-  <td>{{$employ->id}}</td>
-  <td>{{$employ->name}}</td>
-  <td>{{$employ->phone}}</td>
-  <td>{{$employ->address}}</td>
-  <td>{{$employ->designation}}</td>
-  <td>{{$employ->salary}}</td>
-  <td>{{$employ->joining_date}}</td>
-
+  <td>{{$employee_attenden->employee_id}}</td>
+  <td>{{$employee_attenden->in_time}}</td>
+  <td>{{$employee_attenden->out_time}}</td>
+  <td>{{$employee_attenden->date}}</td>
 </tr> 
   
 @endforeach
