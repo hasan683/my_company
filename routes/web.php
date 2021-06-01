@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\EmployeController;
-use App\Http\controllers\EmployeeattendenceController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +17,4 @@ use App\Http\controllers\EmployeeattendenceController;
 
 
 Route::get('/', 'EmployeController@index');
-
-// Route::get('employee_attendence', 'EmployeeattendenceController@employee_attendence');
+Route::get('employeeattendence/{id}', 'EmployeController@employeeattendence');

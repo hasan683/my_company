@@ -30,6 +30,9 @@
     <th>designation</th>
     <th>salary</th>
     <th>joining_date</th>
+    <th>employee_attendence</th>
+    <th>work</th>
+   
   </tr>
 
   
@@ -52,6 +55,11 @@
   <td>{{$employ->designation}}</td>
   <td>{{$employ->salary}}</td>
   <td>{{$employ->joining_date}}</td>
+  <th>{{$employ->employee_attendence}}</th>
+  <th>{{$employ->work}}</th>
+  <th>
+
+<a class="btn btn-primary" href="{{ url('employeeattendence/' .$employ->id )}}"> attendence</a></th>
 
 </tr> 
   

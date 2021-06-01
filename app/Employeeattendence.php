@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Employeeattendence extends Model
+class employeeattendence extends Model
 {
-    protected $table = 'employee_attendence';
-} 
+   
+        protected $table = 'employeeattendence';
+    
+     
+ 
+}
