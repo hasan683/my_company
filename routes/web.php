@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\EmployeController;
+use App\Http\controllers\EmployeeattendenceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,7 @@ use App\Http\controllers\EmployeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('employe', 'EmployeController@index');
+Route::get('/', 'EmployeController@index');
+
+// Route::get('employee_attendence', 'EmployeeattendenceController@employee_attendence');
