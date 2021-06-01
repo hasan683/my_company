@@ -40,13 +40,13 @@
   }
   </style>
 
-@foreach($employee_attendences as $employee_attenden)
+@foreach($employeeattendences as $employeeattenden)
 
 <tr>
-  <td>{{$employee_attenden->employee_id}}</td>
-  <td>{{$employee_attenden->in_time}}</td>
-  <td>{{$employee_attenden->out_time}}</td>
-  <td>{{$employee_attenden->date}}</td>
+  <td>{{$employeeattenden->employee_id}}</td>
+  <td>{{$employeeattenden->in_time}}</td>
+  <td>{{$employeeattenden->out_time}}</td>
+  <td>{{$employeeattenden->date}}</td>
 </tr> 
   
 @endforeach
