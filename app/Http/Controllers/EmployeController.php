@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\employe;
 use App\employeeattendence;
+use App\work;
 
 
 class EmployeController extends Controller
@@ -30,6 +31,17 @@ class EmployeController extends Controller
         $employeeattendences =employeeattendence::where('employee_id',$id)->get();
 
         return view('employeeattendence', compact('employeeattendences'));
+
+     
+    } 
+
+    public function work($id)
+    {
+       
+
+        $works =work::where('employee_id',$id)->get();
+
+        return view('work', compact('works'));
 
      
     } 

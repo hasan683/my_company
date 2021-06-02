@@ -24,10 +24,10 @@
 <table>
   <tr>
     <th>id</th>
-    <th>in_time</th>
-    <th>out_time</th>
+    <th>working</th>
     <th>date</th>
-    <th>name</th>
+    <th>employee_id</th>
+    
     
   </tr>
 
@@ -41,14 +41,14 @@
   }
   </style>
 
-@foreach($employeeattendences as $employeeattenden)
+@foreach($works as $worker)
 
 <tr>
-  <td>{{$employeeattenden->employee_id}}</td>
-  <td>{{$employeeattenden->in_time}}</td>
-  <td>{{$employeeattenden->out_time}}</td>
-  <td>{{$employeeattenden->date}}</td>
-  <td>{{$employeeattenden->employe->name}}</td>
+  <td>{{$worker->id}}</td>
+  <td>{{$worker->working}}</td>
+  <td>{{$worker->date}}</td>
+  <td>{{$worker->employee_id}}</td>
+  <th><a class="btn btn-primary" href="{{ url('employeeattendence/' .$employ->id )}}"> work</a></th>
 </tr> 
   
 @endforeach
