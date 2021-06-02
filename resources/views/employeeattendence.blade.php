@@ -28,6 +28,7 @@
     <th>out_time</th>
     <th>date</th>
     <th>name</th>
+
     
   </tr>
 
@@ -49,6 +50,7 @@
   <td>{{$employeeattenden->out_time}}</td>
   <td>{{$employeeattenden->date}}</td>
   <td>{{$employeeattenden->employe->name}}</td>
+
 </tr> 
   
 @endforeach

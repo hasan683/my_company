@@ -55,6 +55,8 @@
   <td>{{$employ->salary}}</td>
   <td>{{$employ->joining_date}}</td>
   <th><a class="btn btn-primary" href="{{ url('employeeattendence/' .$employ->id )}}"> attendence</a></th>
+  <th><a class="btn btn-primary" href="{{ url('employeeattendence/' .$employ->id  )}}"> work</a></th>
+  
 
 </tr> 
   
