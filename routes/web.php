@@ -18,3 +18,4 @@ use App\Http\controllers\EmployeController;
 
 Route::get('/', 'EmployeController@index');
 Route::get('employeeattendence/{id}', 'EmployeController@employeeattendence');
+Route::get('work', 'EmployeController@work');
