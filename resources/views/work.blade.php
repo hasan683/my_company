@@ -48,7 +48,7 @@
   <td>{{$worker->working}}</td>
   <td>{{$worker->date}}</td>
   <td>{{$worker->employee_id}}</td>
-  <th><a class="btn btn-primary" href="{{ url('employeeattendence/' .$employ->id )}}"> work</a></th>
+  
 </tr> 
   
 @endforeach
