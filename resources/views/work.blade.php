@@ -27,6 +27,7 @@
     <th>working</th>
     <th>date</th>
     <th>employee_id</th>
+    <th>name</th>
     
     
   </tr>
@@ -48,7 +49,7 @@
   <td>{{$worker->working}}</td>
   <td>{{$worker->date}}</td>
   <td>{{$worker->employee_id}}</td>
-  
+  <td>{{$worker->employe->name}}</td>
 </tr> 
   
 @endforeach

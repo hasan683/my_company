@@ -10,6 +10,9 @@ class work extends Model
         protected $table = 'work';
     
      
-    
+        public function employe()
+        {
+            return $this->hasOne('App\employe','id');
+        }
     
 }
